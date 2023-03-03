@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Evet 
+Comment=Evet P2P Cryptocurrency
+Comment[fr]=Evet, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Evet, eşten eşe kriptografik sanal para birimi
+Exec=evet-qt %u
+Terminal=false
+Type=Application
+Icon=pivx128
+MimeType=x-scheme-handler/evet;
+Categories=Office;Finance;
+StartupWMClass=evet-qt
