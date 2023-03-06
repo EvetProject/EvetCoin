@@ -18,4 +18,3 @@ Evet wallet repository
 
 ![image](https://user-images.githubusercontent.com/126577778/223113415-56398565-a2d0-46b8-bb03-d6d43d2f33ac.png)
 
-# EvetCoin
