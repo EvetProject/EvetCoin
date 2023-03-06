@@ -1,43 +1,82 @@
 compat/libbitcoin_util_a-glibc_sanity.o: compat/glibc_sanity.cpp \
- config/pivx-config.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstddef \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stddef.h \
- /usr/share/mingw-w64/include/stddef.h \
- /usr/share/mingw-w64/include/crtdefs.h \
- /usr/share/mingw-w64/include/_mingw.h \
- /usr/share/mingw-w64/include/_mingw_mac.h \
- /usr/share/mingw-w64/include/_mingw_secapi.h \
- /usr/share/mingw-w64/include/vadefs.h \
- /usr/share/mingw-w64/include/sdks/_mingw_directx.h \
- /usr/share/mingw-w64/include/sdks/_mingw_ddk.h
+  config/pivx-config.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstddef \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__config \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stddef.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/__stddef_max_align_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/select.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/appleapiopts.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_symbol_aliasing.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_posix_availability.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_def.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timespec.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timeval.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_time_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_sigset_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_set.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_clr.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_isset.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_zero.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_copy.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_select.h
 
 config/pivx-config.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstddef:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstddef:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++config.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__config:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stddef.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/__stddef_max_align_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stddef.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/select.h:
 
-/usr/share/mingw-w64/include/stddef.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/appleapiopts.h:
 
-/usr/share/mingw-w64/include/crtdefs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h:
 
-/usr/share/mingw-w64/include/_mingw.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_symbol_aliasing.h:
 
-/usr/share/mingw-w64/include/_mingw_mac.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_posix_availability.h:
 
-/usr/share/mingw-w64/include/_mingw_secapi.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types.h:
 
-/usr/share/mingw-w64/include/vadefs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_types.h:
 
-/usr/share/mingw-w64/include/sdks/_mingw_directx.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_types.h:
 
-/usr/share/mingw-w64/include/sdks/_mingw_ddk.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_types.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_def.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timespec.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timeval.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_time_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_suseconds_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_sigset_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_setsize.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_set.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_clr.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_isset.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_zero.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_fd_copy.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_select.h:

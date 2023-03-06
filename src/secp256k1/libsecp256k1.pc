@@ -1,4 +1,4 @@
-prefix=/opt/Projects/Evet/depends/x86_64-w64-mingw32
+prefix=/opt/Projects/Evet/depends/x86_64-apple-darwin14
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

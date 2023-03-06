@@ -109,7 +109,7 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-pc-linux-gnu
-host_triplet = x86_64-w64-mingw32
+host_triplet = x86_64-apple-darwin14
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5) $(am__EXEEXT_6)
 noinst_PROGRAMS =
@@ -119,9 +119,9 @@ am__append_2 = evet-cli evet-tx
 #am__append_3 = compat/glibc_compat.cpp
 #am__append_4 = $(COMPAT_LDFLAGS) \
 #	$(COMPAT_LDFLAGS)
-am__append_5 = pivxd-res.rc
-am__append_6 = pivx-cli-res.rc
-am__append_7 = pivx-tx-res.rc
+#am__append_5 = pivxd-res.rc
+#am__append_6 = pivx-cli-res.rc
+#am__append_7 = pivx-tx-res.rc
 ##am__append_8 = compat/glibc_compat.cpp
 am__append_9 = $(LIBCRC32C_INT)
 am__append_10 = -DHAVE_SSE42=1
@@ -142,10 +142,10 @@ am__append_23 = -I$(srcdir)/leveldb/include \
 	-I$(srcdir)/leveldb/helpers/memenv
 #am__append_24 = -DLEVELDB_IS_BIG_ENDIAN=1
 am__append_25 = -DLEVELDB_IS_BIG_ENDIAN=0
-am__append_26 = -DLEVELDB_PLATFORM_WINDOWS -D_UNICODE -DUNICODE -D__USE_MINGW_ANSI_STDIO=1
-#am__append_27 = -DLEVELDB_PLATFORM_POSIX
-am__append_28 = leveldb/util/env_windows.cc
-#am__append_29 = leveldb/util/env_posix.cc
+#am__append_26 = -DLEVELDB_PLATFORM_WINDOWS -D_UNICODE -DUNICODE -D__USE_MINGW_ANSI_STDIO=1
+am__append_27 = -DLEVELDB_PLATFORM_POSIX
+#am__append_28 = leveldb/util/env_windows.cc
+am__append_29 = leveldb/util/env_posix.cc
 #am__append_30 = test/test_pivx
 #am__append_31 = \
 #  wallet/test/wallet_test_fixture.cpp \
@@ -165,10 +165,10 @@ am__append_28 = leveldb/util/env_windows.cc
 #am__append_39 = $(CLEAN_BITCOIN_BENCH)
 am__append_40 = qt/evet-qt
 am__append_41 = qt/libbitcoinqt.a
-am__append_42 = $(BITCOIN_QT_WINDOWS_CPP)
+#am__append_42 = $(BITCOIN_QT_WINDOWS_CPP)
 am__append_43 = $(BITCOIN_QT_WALLET_CPP)
-#am__append_44 = $(BITCOIN_MM)
-am__append_45 = $(BITCOIN_RC)
+am__append_44 = $(BITCOIN_MM)
+#am__append_45 = $(BITCOIN_RC)
 am__append_46 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 am__append_47 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_48 = $(CLEAN_QT)
@@ -339,8 +339,8 @@ am__leveldb_libleveldb_a_SOURCES_DIST = leveldb/port/port_stdcxx.h \
 	leveldb/util/logging.cc leveldb/util/options.cc \
 	leveldb/util/status.cc leveldb/util/env_windows.cc \
 	leveldb/util/env_posix.cc
-am__objects_1 = leveldb/util/leveldb_libleveldb_a-env_windows.$(OBJEXT)
-#am__objects_2 = leveldb/util/leveldb_libleveldb_a-env_posix.$(OBJEXT)
+#am__objects_1 = leveldb/util/leveldb_libleveldb_a-env_windows.$(OBJEXT)
+am__objects_2 = leveldb/util/leveldb_libleveldb_a-env_posix.$(OBJEXT)
 am_leveldb_libleveldb_a_OBJECTS = leveldb/db/leveldb_libleveldb_a-builder.$(OBJEXT) \
 	leveldb/db/leveldb_libleveldb_a-c.$(OBJEXT) \
 	leveldb/db/leveldb_libleveldb_a-dbformat.$(OBJEXT) \
@@ -938,7 +938,7 @@ am__objects_5 =  \
 	qt/qt_libbitcoinqt_a-trafficgraphwidget.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-utilitydialog.$(OBJEXT)
 am__objects_6 = qt/qt_libbitcoinqt_a-winshutdownmonitor.$(OBJEXT)
-am__objects_7 = $(am__objects_6)
+#am__objects_7 = $(am__objects_6)
 am__objects_8 = qt/qt_libbitcoinqt_a-addressbookpage.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-addresstablemodel.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-askpassphrasedialog.$(OBJEXT) \
@@ -1225,7 +1225,7 @@ bench_bench_pivx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(bench_bench_pivx_CXXFLAGS) $(CXXFLAGS) \
 	$(bench_bench_pivx_LDFLAGS) $(LDFLAGS) -o $@
 am__evet_cli_SOURCES_DIST = pivx-cli.cpp pivx-cli-res.rc
-am__objects_17 = pivx-cli-res.$(OBJEXT)
+#am__objects_17 = pivx-cli-res.$(OBJEXT)
 am_evet_cli_OBJECTS = evet_cli-pivx-cli.$(OBJEXT) $(am__objects_17)
 evet_cli_OBJECTS = $(am_evet_cli_OBJECTS)
 #am__DEPENDENCIES_5 = $(am__DEPENDENCIES_3)
@@ -1238,7 +1238,7 @@ evet_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(evet_cli_CXXFLAGS) \
 	$(CXXFLAGS) $(evet_cli_LDFLAGS) $(LDFLAGS) -o $@
 am__evet_tx_SOURCES_DIST = pivx-tx.cpp pivx-tx-res.rc
-am__objects_18 = pivx-tx-res.$(OBJEXT)
+#am__objects_18 = pivx-tx-res.$(OBJEXT)
 am_evet_tx_OBJECTS = evet_tx-pivx-tx.$(OBJEXT) $(am__objects_18)
 evet_tx_OBJECTS = $(am_evet_tx_OBJECTS)
 evet_tx_DEPENDENCIES = $(am__DEPENDENCIES_5) $(LIBBITCOIN_COMMON) \
@@ -1248,7 +1248,7 @@ evet_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(evet_tx_CXXFLAGS) \
 	$(CXXFLAGS) $(evet_tx_LDFLAGS) $(LDFLAGS) -o $@
 am__evetd_SOURCES_DIST = pivxd.cpp pivxd-res.rc
-am__objects_19 = pivxd-res.$(OBJEXT)
+#am__objects_19 = pivxd-res.$(OBJEXT)
 am_evetd_OBJECTS = evetd-pivxd.$(OBJEXT) $(am__objects_19)
 evetd_OBJECTS = $(am_evetd_OBJECTS)
 evetd_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_WALLET) \
@@ -1267,11 +1267,11 @@ am__qt_evet_qt_SOURCES_DIST = qt/pivx.cpp qt/macdockiconhandler.mm \
 am__objects_20 =  \
 	qt/qt_evet_qt-macdockiconhandler.$(OBJEXT) \
 	qt/qt_evet_qt-macnotificationhandler.$(OBJEXT)
-#am__objects_21 =  \
-#	$(am__objects_20)
+am__objects_21 =  \
+	$(am__objects_20)
 am__objects_22 = qt/res/pivx-qt-res.$(OBJEXT)
-am__objects_23 =  \
-	$(am__objects_22)
+#am__objects_23 =  \
+#	$(am__objects_22)
 am_qt_evet_qt_OBJECTS = qt/qt_evet_qt-pivx.$(OBJEXT) \
 	$(am__objects_21) $(am__objects_23)
 qt_evet_qt_OBJECTS = $(am_qt_evet_qt_OBJECTS)
@@ -1763,7 +1763,7 @@ am__set_TESTS_bases = \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
 TEST_SUITE_LOG = test-suite.log
-TEST_EXTENSIONS = .exe .test
+TEST_EXTENSIONS =  .test
 LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
 LOG_COMPILE = $(LOG_COMPILER) $(AM_LOG_FLAGS) $(LOG_FLAGS)
 am__set_b = \
@@ -1777,7 +1777,7 @@ am__set_b = \
       b='$*';; \
   esac
 am__test_logs1 = $(TESTS:=.log)
-am__test_logs2 = $(am__test_logs1:.exe.log=.log)
+am__test_logs2 = $(am__test_logs1:.log=.log)
 TEST_LOGS = $(am__test_logs2:.test.log=.log)
 TEST_LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
 TEST_LOG_COMPILE = $(TEST_LOG_COMPILER) $(AM_TEST_LOG_FLAGS) \
@@ -1820,7 +1820,7 @@ am__relativize = \
 ACLOCAL = ${SHELL} /opt/Projects/Evet/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /usr/bin/x86_64-w64-mingw32-ar
+AR = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ar
 ARFLAGS = cr
 ARM_CRC_CXXFLAGS = 
 AUTOCONF = ${SHELL} /opt/Projects/Evet/build-aux/missing autoconf
@@ -1835,192 +1835,192 @@ BITCOIN_CLI_NAME = evet-cli
 BITCOIN_DAEMON_NAME = evetd
 BITCOIN_GUI_NAME = evet-qt
 BITCOIN_TX_NAME = evet-tx
-BOOST_CHRONO_LIB = -lboost_chrono-mt-s-x64
-BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -mthreads -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include
-BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-s-x64
-BOOST_LDFLAGS = -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib
-BOOST_LIBS = -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib -lboost_system-mt-s-x64 -lboost_filesystem-mt-s-x64 -lboost_program_options-mt-s-x64 -lboost_thread-mt-s-x64 -lboost_chrono-mt-s-x64
-BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-s-x64
-BOOST_SYSTEM_LIB = -lboost_system-mt-s-x64
-BOOST_THREAD_LIB = -lboost_thread-mt-s-x64
+BOOST_CHRONO_LIB = -lboost_chrono-mt-x64
+BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../include
+BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt-x64
+BOOST_LDFLAGS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../lib
+BOOST_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../lib -lboost_system-mt-x64 -lboost_filesystem-mt-x64 -lboost_program_options-mt-x64 -lboost_thread-mt-x64 -lboost_chrono-mt-x64
+BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt-x64
+BOOST_SYSTEM_LIB = -lboost_system-mt-x64
+BOOST_THREAD_LIB = -lboost_thread-mt-x64
 BOOST_UNIT_TEST_FRAMEWORK_LIB = 
-BREW = 
-CC = x86_64-w64-mingw32-gcc
+BREW = no
+CC = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
 CCACHE = 
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
-CHARTS_CFLAGS = 
-CHARTS_LIBS = -lQt5Charts
+CHARTS_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCharts -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtWidgets -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+CHARTS_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -L/opt/Projects/Evet/depends/work/build/x86_64-apple-darwin14/qt/5.9.9-f366c40f65e/qtbase/lib -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Charts -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
 CLIENT_VERSION_BUILD = 0
 CLIENT_VERSION_IS_RELEASE = true
 CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 0
-CLIENT_VERSION_REVISION = 0
+CLIENT_VERSION_REVISION = 1
 COMPAT_LDFLAGS = 
 COPYRIGHT_YEAR = 2021
-CPP = x86_64-w64-mingw32-gcc -E
-CPPFILT = /usr/bin/x86_64-w64-mingw32-c++filt
-CPPFLAGS = -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -D_MT -DWIN32 -D_WINDOWS -DBOOST_THREAD_USE_LIB -D_FILE_OFFSET_BITS=64
-CRYPTO_CFLAGS = 
-CRYPTO_LIBS = -lcrypto
-CXX = x86_64-w64-mingw32-g++ -std=c++11
-CXXCPP = x86_64-w64-mingw32-g++ -std=c++11 -E
+CPP = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -E
+CPPFILT = /usr/bin/c++filt
+CPPFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX -DOBJC_OLD_DISPATCH_PROTOTYPES=0
+CRYPTO_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+CRYPTO_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lcrypto
+CXX = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
+CXXCPP = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -pipe -O2  -fno-strict-aliasing -Wno-builtin-declaration-mismatch
+CXXFLAGS = -pipe -O2  -fno-strict-aliasing
 CYGPATH_W = echo
 DEBUG_CPPFLAGS = 
 DEBUG_CXXFLAGS = 
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
-DLLTOOL = x86_64-w64-mingw32-dlltool
+DLLTOOL = false
 DOXYGEN = 
-DSYMUTIL = 
+DSYMUTIL = x86_64-apple-darwin14-dsymutil
 DUMPBIN = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
 ERROR_CXXFLAGS = 
-EVENT_CFLAGS = 
-EVENT_LIBS = -levent
-EVENT_PTHREADS_CFLAGS = 
-EVENT_PTHREADS_LIBS = 
-EXEEXT = .exe
+EVENT_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+EVENT_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -levent
+EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+EVENT_PTHREADS_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -levent_pthreads -levent
+EXEEXT = 
 EXTENDED_FUNCTIONAL_TESTS = 
 FGREP = /bin/grep -F
-GCOV = /usr/bin/x86_64-w64-mingw32-gcov
+GCOV = /usr/bin/gcov
 GENHTML = 
-GENISOIMAGE = 
+GENISOIMAGE = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/genisoimage
 GIT = /usr/bin/git
 GPROF_CXXFLAGS = 
 GPROF_LDFLAGS = 
 GREP = /bin/grep
 HARDENED_CPPFLAGS =  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
 HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
-HARDENED_LDFLAGS =  -Wl,--dynamicbase -Wl,--nxcompat -Wl,--high-entropy-va -pie
+HARDENED_LDFLAGS = 
 HAVE_BUILTIN_PREFETCH = 1
 HAVE_CXX11 = 1
 HAVE_FDATASYNC = 0
-HAVE_FULLFSYNC = 0
+HAVE_FULLFSYNC = 1
 HAVE_MM_PREFETCH = 1
-HAVE_O_CLOEXEC = 0
+HAVE_O_CLOEXEC = 1
 HAVE_STRONG_GETAUXVAL = 0
 HAVE_WEAK_GETAUXVAL = 1
 HEXDUMP = /usr/bin/hexdump
-IMAGEMAGICK_CONVERT = 
+IMAGEMAGICK_CONVERT = /usr/bin/convert
 INSTALL = /usr/bin/install -c
-INSTALLNAMETOOL = 
+INSTALLNAMETOOL = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-install_name_tool
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LCOV = 
 LCOV_OPTS = 
-LD = /usr/bin/x86_64-w64-mingw32-ld
-LDFLAGS = -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib 
+LD = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ld
+LDFLAGS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../lib  -Wl,-headerpad_max_install_names -Wl,-dead_strip
 LEVELDB_CPPFLAGS =  $(am__append_23)
 LIBLEVELDB =  $(am__append_21)
 LIBMEMENV =  $(am__append_22)
 LIBOBJS = 
-LIBS = -lQt5AccessibilitySupport -lQt5DeviceDiscoverySupport -lQt5FbSupport -lQt5ThemeSupport -lQt5EventDispatcherSupport -lQt5FontDatabaseSupport -lssp -lcrypt32 -liphlpapi -lshlwapi -lmswsock -lws2_32 -ladvapi32 -lrpcrt4 -luuid -loleaut32 -lole32 -lcomctl32 -lshell32 -lwinmm -lwinspool -lcomdlg32 -lgdi32 -luser32 -lkernel32 -lmingwthrd 
+LIBS = 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-LIBTOOL_APP_LDFLAGS =  -all-static
-LIPO = 
+LIBTOOL_APP_LDFLAGS = 
+LIPO = x86_64-apple-darwin14-lipo
 LN_S = ln -s
-LRELEASE = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/bin/lrelease
+LRELEASE = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-LUPDATE = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/bin/lupdate
+LUPDATE = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/lupdate
 MAINT = 
 MAKEINFO = ${SHELL} /opt/Projects/Evet/build-aux/missing makeinfo
-MAKENSIS = none
+MAKENSIS = 
 MANIFEST_TOOL = :
-MINIUPNPC_CPPFLAGS = -DSTATICLIB -DMINIUPNP_STATICLIB
+MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/bin/moc
-MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
-NM = x86_64-w64-mingw32-nm
-NMEDIT = 
+MOC = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/moc
+MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir) -DQ_OS_MAC
+NM = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-nm
+NMEDIT = x86_64-apple-darwin14-nmedit
 NOWARN_CXXFLAGS = 
-OBJCOPY = /usr/bin/x86_64-w64-mingw32-objcopy
-OBJCXX = x86_64-w64-mingw32-g++ -std=c++11
+OBJCOPY = /usr/bin/objcopy
+OBJCXX = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
-OBJCXXFLAGS = 
-OBJDUMP = x86_64-w64-mingw32-objdump
+OBJCXXFLAGS = -pipe -O2 
+OBJDUMP = objdump
 OBJEXT = o
-OTOOL = 
-OTOOL64 = 
+OTOOL = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-otool
+OTOOL64 = :
 PACKAGE = evet
 PACKAGE_BUGREPORT = https://github.com/decenomy/EVET/issues
 PACKAGE_NAME = Evet Core
-PACKAGE_STRING = Evet Core 1.0.0
+PACKAGE_STRING = Evet Core 1.0.1
 PACKAGE_TARNAME = evet
 PACKAGE_URL = https://evet.ink/
-PACKAGE_VERSION = 1.0.0
+PACKAGE_VERSION = 1.0.1
 PATH_SEPARATOR = :
-PIC_FLAGS = 
-PIE_FLAGS = -fPIE
+PIC_FLAGS = -fPIC
+PIE_FLAGS = 
 PKG_CONFIG = /usr/bin/pkg-config --static
 PKG_CONFIG_LIBDIR = 
-PKG_CONFIG_PATH = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../share/pkgconfig:/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib/pkgconfig
-PORT = 
-PROTOBUF_CFLAGS = 
-PROTOBUF_LIBS = -lprotobuf
-PROTOC = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/bin/protoc
-PTHREAD_CC = x86_64-w64-mingw32-gcc
-PTHREAD_CFLAGS = -pthread
+PKG_CONFIG_PATH = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../share/pkgconfig:/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../lib/pkgconfig
+PORT = no
+PROTOBUF_CFLAGS = -D_THREAD_SAFE -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+PROTOBUF_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lprotobuf -D_THREAD_SAFE -lz
+PROTOC = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/protoc
+PTHREAD_CC = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
+PTHREAD_CFLAGS = -Qunused-arguments -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3.6
-PYTHONPATH = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/lib/python3/dist-packages:
-QR_CFLAGS = 
-QR_LIBS = -lqrencode
-QT5_CFLAGS = 
-QT5_LIBS = 
-QTACCESSIBILITY_CFLAGS = 
-QTACCESSIBILITY_LIBS = 
-QTCGL_CFLAGS = 
-QTCGL_LIBS = 
-QTCLIPBOARD_CFLAGS = 
-QTCLIPBOARD_LIBS = 
-QTDEVICEDISCOVERY_CFLAGS = 
-QTDEVICEDISCOVERY_LIBS = 
-QTEVENTDISPATCHER_CFLAGS = 
-QTEVENTDISPATCHER_LIBS = 
-QTFB_CFLAGS = 
-QTFB_LIBS = 
-QTFONTDATABASE_CFLAGS = 
-QTFONTDATABASE_LIBS = 
-QTGRAPHICS_CFLAGS = 
-QTGRAPHICS_LIBS = 
+PYTHONPATH = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/lib/python3/dist-packages:
+QR_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+QR_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lqrencode -lpthread
+QT5_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtNetwork -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtWidgets -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT5_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Network -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework Security -framework CoreFoundation -framework CoreServices -framework SystemConfiguration -lz -lssl -lcrypto -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTACCESSIBILITY_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtAccessibilitySupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTACCESSIBILITY_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5AccessibilitySupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTCGL_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCglSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTCGL_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5CglSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTCLIPBOARD_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtClipboardSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTCLIPBOARD_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5ClipboardSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTDEVICEDISCOVERY_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtDeviceDiscoverySupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTDEVICEDISCOVERY_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5DeviceDiscoverySupport -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTEVENTDISPATCHER_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtEventDispatcherSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTEVENTDISPATCHER_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5EventDispatcherSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTFB_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtFbSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTFB_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5FbSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTFONTDATABASE_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtFontDatabaseSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTFONTDATABASE_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5FontDatabaseSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework CoreFoundation -framework CoreGraphics -framework CoreText -framework Foundation -framework AppKit -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QTGRAPHICS_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGraphicsSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTGRAPHICS_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5GraphicsSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
 QTPLATFORM_CFLAGS = 
 QTPLATFORM_LIBS = 
-QTTHEME_CFLAGS = 
-QTTHEME_LIBS = 
+QTTHEME_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtThemeSupport -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QTTHEME_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5ThemeSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_CONCURRENT_CFLAGS = 
-QT_CONCURRENT_LIBS = 
-QT_DBUS_CFLAGS = 
-QT_DBUS_INCLUDES = 
-QT_DBUS_LIBS = -lQt5DBus -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib
-QT_INCLUDES = -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtCore -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtGui -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtWidgets -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtNetwork -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtTest -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtDBus -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtConcurrent -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtSvg -I/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../include/QtCharts
-QT_LDFLAGS =  -mwindows
-QT_LIBS = -lqwindows -lqsvgicon -lqgif -lqsvg -lqminimal -lQt5Concurrent -lQt5Widgets -lQt5Network -lQt5Gui     -lQt5Core    -lqtharfbuzz -lqtpcre2 -lqtlibpng -lz  -limm32  -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib -lQt5Svg -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../plugins/platforms -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../plugins/imageformats -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../plugins/iconengines -lversion -ldwmapi -luxtheme
-QT_PIE_FLAGS = -fPIE
+QT_CONCURRENT_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtConcurrent -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_CONCURRENT_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Concurrent -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QT_DBUS_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtDBus -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_DBUS_INCLUDES = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtDBus -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_DBUS_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5DBus -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QT_INCLUDES = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtNetwork -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtWidgets -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtConcurrent -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_LDFLAGS = 
+QT_LIBS = -lqcocoa -lqsvgicon -lqgif -lqsvg -lqminimal -lQt5CglSupport -lQt5GraphicsSupport -lQt5ClipboardSupport -lQt5FbSupport -lQt5AccessibilitySupport -lQt5DeviceDiscoverySupport -lQt5ThemeSupport -lQt5EventDispatcherSupport -lQt5FontDatabaseSupport -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Network -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework Security -framework CoreFoundation -framework CoreServices -framework SystemConfiguration -lz -lssl -lcrypto -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -L/opt/Projects/Evet/depends/work/build/x86_64-apple-darwin14/qt/5.9.9-f366c40f65e/qtbase/lib -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Svg -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lz -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Concurrent -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../plugins/platforms -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../plugins/imageformats -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../plugins/iconengines -framework IOKit -framework Foundation -framework ApplicationServices -framework AppKit
+QT_PIE_FLAGS = 
 QT_SELECT = qt5
-QT_SVG_CFLAGS = 
-QT_SVG_INCLUDES = 
-QT_SVG_LIBS = -lQt5Svg -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib
-QT_TEST_CFLAGS = 
-QT_TEST_INCLUDES = 
-QT_TEST_LIBS = -lQt5Test -L/opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../lib
-QT_TRANSLATION_DIR = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../translations
-RANLIB = /usr/bin/x86_64-w64-mingw32-ranlib
-RCC = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/bin/rcc
-READELF = /usr/bin/x86_64-w64-mingw32-readelf
+QT_SVG_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtSvg -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtWidgets -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_SVG_INCLUDES = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtSvg -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtWidgets -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtGui -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_SVG_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -L/opt/Projects/Evet/depends/work/build/x86_64-apple-darwin14/qt/5.9.9-f366c40f65e/qtbase/lib -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Svg -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework OpenGL -framework AGL -lz -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework CoreGraphics -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -lQt5Core -lm -lz -lqtpcre2 -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2 -framework AppKit -framework CoreGraphics -framework Foundation -framework OpenGL -framework AGL -lqtlibpng -lqtharfbuzz -framework ApplicationServices -lz -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QT_TEST_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtTest -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_TEST_INCLUDES = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtTest -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include/QtCore
+QT_TEST_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lQt5Test -framework Security -framework Foundation -framework ApplicationServices -framework IOKit -lQt5Core -framework DiskArbitration -lm -framework CoreServices -framework AppKit -framework CoreFoundation -lz -lqtpcre2 -lQt5Core -framework DiskArbitration -framework IOKit -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lz -lqtpcre2
+QT_TRANSLATION_DIR = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../translations
+RANLIB = /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/x86_64-apple-darwin14-ranlib
+RCC = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/rcc
+READELF = /usr/bin/readelf
 RELDFLAGS = 
-RSVG_CONVERT = 
+RSVG_CONVERT = /usr/bin/rsvg-convert
 SANITIZER_CXXFLAGS = 
 SANITIZER_LDFLAGS = 
 SED = /bin/sed
@@ -2029,27 +2029,27 @@ SHANI_CXXFLAGS = -msse4 -msha
 SHELL = /bin/bash
 SSE41_CXXFLAGS = -msse4.1
 SSE42_CXXFLAGS = -msse4.2
-SSL_CFLAGS = 
-SSL_LIBS = -lssl
-STRIP = /usr/bin/x86_64-w64-mingw32-strip
+SSL_CFLAGS = -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+SSL_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lssl -lcrypto
+STRIP = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/x86_64-apple-darwin14-strip
 TESTDEFS = 
-TIFFCP = 
-UIC = /opt/Projects/Evet/depends/x86_64-w64-mingw32/share/../native/bin/uic
+TIFFCP = /usr/bin/tiffcp
+UIC = /opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../native/bin/uic
 UNIVALUE_CFLAGS = -I$(srcdir)/univalue/include
 UNIVALUE_LIBS = univalue/libunivalue.la
 USE_NUM_GMP = 
 USE_NUM_OPENSSL = 
 USE_QTCHARTS = 
 USE_UPNP = 
-VERSION = 1.0.0
+VERSION = 1.0.1
 WARN_CXXFLAGS = 
-WINDOWS_BITS = 64
-WINDRES = /usr/bin/x86_64-w64-mingw32-windres
+WINDOWS_BITS = 
+WINDRES = 
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
-ZMQ_CFLAGS =  -DZMQ_STATIC
-ZMQ_LIBS = -lzmq
+ZMQ_CFLAGS = -DZMQ_BUILD_DRAFT_API=1 -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/include
+ZMQ_LIBS = -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/lib -lzmq -lpthread
 abs_builddir = /opt/Projects/Evet/src
 abs_srcdir = /opt/Projects/Evet/src
 abs_top_builddir = /opt/Projects/Evet
@@ -2077,11 +2077,11 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = x86_64-w64-mingw32
-host_alias = x86_64-w64-mingw32
+host = x86_64-apple-darwin14
+host_alias = x86_64-apple-darwin14
 host_cpu = x86_64
-host_os = mingw32
-host_vendor = w64
+host_os = darwin14
+host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
@@ -2094,7 +2094,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /opt/Projects/Evet/depends/x86_64-w64-mingw32
+prefix = /opt/Projects/Evet/depends/x86_64-apple-darwin14
 program_transform_name = s,x,x,
 psdir = ${docdir}
 runstatedir = ${localstatedir}/run
@@ -2583,8 +2583,8 @@ LEVELDB_CPPFLAGS_INT = -I$(srcdir)/leveldb \
 	-D__STDC_LIMIT_MACROS -DHAVE_SNAPPY=0 \
 	-DHAVE_CRC32C=1 \
 	-DHAVE_FDATASYNC=0 \
-	-DHAVE_FULLFSYNC=0 \
-	-DHAVE_O_CLOEXEC=0 \
+	-DHAVE_FULLFSYNC=1 \
+	-DHAVE_O_CLOEXEC=1 \
 	$(am__append_24) $(am__append_25) \
 	$(am__append_26) $(am__append_27)
 leveldb_libleveldb_a_CPPFLAGS = $(AM_CPPFLAGS) $(LEVELDB_CPPFLAGS_INT) $(LEVELDB_CPPFLAGS)
@@ -11799,13 +11799,13 @@ qt/test/test_pivx-qt.log: qt/test/test_pivx-qt$(EXEEXT)
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
-.test$(EXEEXT).log:
-	@p='$<'; \
-	$(am__set_b); \
-	$(am__check_pre) $(TEST_LOG_DRIVER) --test-name "$$f" \
-	--log-file $$b.log --trs-file $$b.trs \
-	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
-	"$$tst" $(AM_TESTS_FD_REDIRECT)
+#.test$(EXEEXT).log:
+#	@p='$<'; \
+#	$(am__set_b); \
+#	$(am__check_pre) $(TEST_LOG_DRIVER) --test-name "$$f" \
+#	--log-file $$b.log --trs-file $$b.trs \
+#	$(am__common_driver_flags) $(AM_TEST_LOG_DRIVER_FLAGS) $(TEST_LOG_DRIVER_FLAGS) -- $(TEST_LOG_COMPILE) \
+#	"$$tst" $(AM_TESTS_FD_REDIRECT)
 
 distdir: $(DISTFILES)
 	@srcdirstrip=`echo "$(srcdir)" | sed 's/[].[^$$\\*]/\\\\&/g'`; \

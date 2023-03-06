@@ -1,43 +1,55 @@
 compat/libbitcoin_util_a-strnlen.o: compat/strnlen.cpp \
- config/pivx-config.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstring \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- /usr/share/mingw-w64/include/string.h \
- /usr/share/mingw-w64/include/crtdefs.h \
- /usr/share/mingw-w64/include/_mingw.h \
- /usr/share/mingw-w64/include/_mingw_mac.h \
- /usr/share/mingw-w64/include/_mingw_secapi.h \
- /usr/share/mingw-w64/include/vadefs.h \
- /usr/share/mingw-w64/include/sdks/_mingw_directx.h \
- /usr/share/mingw-w64/include/sdks/_mingw_ddk.h \
- /usr/share/mingw-w64/include/sec_api/string_s.h
+  config/pivx-config.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstring \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__config \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/string.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_symbol_aliasing.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_posix_availability.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/Availability.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/AvailabilityInternal.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_size_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_null.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ssize_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/strings.h
 
 config/pivx-config.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstring:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstring:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++config.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__config:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/string.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types.h:
 
-/usr/share/mingw-w64/include/string.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types.h:
 
-/usr/share/mingw-w64/include/crtdefs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h:
 
-/usr/share/mingw-w64/include/_mingw.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_symbol_aliasing.h:
 
-/usr/share/mingw-w64/include/_mingw_mac.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_posix_availability.h:
 
-/usr/share/mingw-w64/include/_mingw_secapi.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_types.h:
 
-/usr/share/mingw-w64/include/vadefs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_types.h:
 
-/usr/share/mingw-w64/include/sdks/_mingw_directx.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
-/usr/share/mingw-w64/include/sdks/_mingw_ddk.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/Availability.h:
 
-/usr/share/mingw-w64/include/sec_api/string_s.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/AvailabilityInternal.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_size_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_null.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ssize_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/strings.h:

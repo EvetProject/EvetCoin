@@ -1,433 +1,418 @@
 leveldb/db/leveldb_libleveldb_a-dumpfile.o: leveldb/db/dumpfile.cc \
- leveldb/include/leveldb/dumpfile.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/string \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++config.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stringfwd.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/memoryfwd.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/char_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_algobase.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/functexcept.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/exception_defines.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/cpp_type_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/type_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/numeric_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_pair.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/move.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/concept_check.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/type_traits \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_iterator_base_types.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_iterator_base_funcs.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/debug/assertions.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_iterator.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/ptr_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/debug/debug.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/predefined_ops.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/postypes.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cwchar \
- /usr/share/mingw-w64/include/wchar.h \
- /usr/share/mingw-w64/include/crtdefs.h \
- /usr/share/mingw-w64/include/_mingw.h \
- /usr/share/mingw-w64/include/_mingw_mac.h \
- /usr/share/mingw-w64/include/_mingw_secapi.h \
- /usr/share/mingw-w64/include/vadefs.h \
- /usr/share/mingw-w64/include/sdks/_mingw_directx.h \
- /usr/share/mingw-w64/include/sdks/_mingw_ddk.h \
- /usr/share/mingw-w64/include/_mingw_print_push.h \
- /usr/share/mingw-w64/include/_mingw_off_t.h \
- /usr/share/mingw-w64/include/_mingw_stat64.h \
- /usr/x86_64-w64-mingw32/include/swprintf.inl \
- /usr/share/mingw-w64/include/sec_api/wchar_s.h \
- /usr/share/mingw-w64/include/_mingw_print_pop.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstdint \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stdint.h \
- /usr/share/mingw-w64/include/stdint.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stddef.h \
- /usr/share/mingw-w64/include/stddef.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/allocator.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/new_allocator.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/new \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/exception \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/exception.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/exception_ptr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/typeinfo \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/hash_bytes.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/nested_exception.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/localefwd.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/clocale \
- /usr/share/mingw-w64/include/locale.h \
- /usr/share/mingw-w64/include/stdio.h \
- /usr/share/mingw-w64/include/sec_api/stdio_s.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/iosfwd \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cctype \
- /usr/share/mingw-w64/include/ctype.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/ostream_insert.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/cxxabi_forced.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_function.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/backward/binders.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/range_access.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/initializer_list \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/basic_string.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/atomicity.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- /usr/share/mingw-w64/include/pthread.h \
- /usr/share/mingw-w64/include/errno.h \
- /usr/share/mingw-w64/include/sys/types.h \
- /usr/share/mingw-w64/include/process.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/syslimits.h \
- /usr/share/mingw-w64/include/limits.h \
- /usr/share/mingw-w64/include/signal.h \
- /usr/share/mingw-w64/include/pthread_signal.h \
- /usr/share/mingw-w64/include/sys/timeb.h \
- /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
- /usr/share/mingw-w64/include/pthread_compat.h \
- /usr/share/mingw-w64/include/pthread_unistd.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/alloc_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/alloc_traits.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/string_conversions.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstdlib \
- /usr/share/mingw-w64/include/stdlib.h \
- /usr/share/mingw-w64/include/sec_api/stdlib_s.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/stdlib.h \
- /usr/share/mingw-w64/include/malloc.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/std_abs.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstdio \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cerrno \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/functional_hash.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/basic_string.tcc \
- leveldb/include/leveldb/env.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stdarg.h \
- /usr/share/mingw-w64/include/stdarg.h \
- /usr/share/mingw-w64/include/_mingw_stdarg.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/vector \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_construct.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_uninitialized.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_vector.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_bvector.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/vector.tcc \
- leveldb/include/leveldb/export.h leveldb/include/leveldb/status.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/algorithm \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/utility \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_relops.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_algo.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/algorithmfwd.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_heap.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_tempbuf.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/uniform_int_dist.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/limits \
- leveldb/include/leveldb/slice.h /usr/share/mingw-w64/include/assert.h \
- /usr/share/mingw-w64/include/string.h \
- /usr/share/mingw-w64/include/sec_api/string_s.h leveldb/db/dbformat.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstddef \
- leveldb/include/leveldb/comparator.h leveldb/include/leveldb/db.h \
- leveldb/include/leveldb/iterator.h leveldb/include/leveldb/options.h \
- leveldb/include/leveldb/filter_policy.h \
- leveldb/include/leveldb/table_builder.h leveldb/util/coding.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstring \
- leveldb/port/port.h leveldb/port/port_stdcxx.h \
- crc32c/include/crc32c/crc32c.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cassert \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/condition_variable \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/chrono \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ratio \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ctime \
- /usr/share/mingw-w64/include/time.h \
- /usr/share/mingw-w64/include/_timeval.h \
- /usr/share/mingw-w64/include/pthread_time.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/parse_numbers.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/std_mutex.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/system_error \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/stdexcept \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/concurrence.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/unique_ptr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/tuple \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/array \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/uses_allocator.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/invoke.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/shared_ptr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/shared_ptr_base.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/allocated_ptr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/refwrap.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/aligned_buffer.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/mutex \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/std_function.h \
- leveldb/port/thread_annotations.h leveldb/util/logging.h \
- leveldb/db/filename.h leveldb/db/log_reader.h leveldb/db/log_format.h \
- leveldb/db/version_edit.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/set \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_tree.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_set.h \
- /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_multiset.h \
- leveldb/db/write_batch_internal.h leveldb/include/leveldb/write_batch.h \
- leveldb/include/leveldb/table.h
+  leveldb/include/leveldb/dumpfile.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/string \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__config \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/iosfwd \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/wchar.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_symbol_aliasing.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_posix_availability.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/Availability.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/AvailabilityInternal.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_null.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_size_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_rune_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_wchar_t.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stdarg.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/stdio.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_va_list.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/stdio.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_off_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ssize_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/time.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_clock_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_time_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timespec.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_wctype.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_wint_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_wctype_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/ctype.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/runetype.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstring \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/string.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/strings.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstdio \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cwchar \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cwctype \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cctype \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/wctype.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_wctrans_t.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/algorithm \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/initializer_list \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstddef \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stddef.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/__stddef_max_align_t.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/type_traits \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/utility \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__tuple \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/memory \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/typeinfo \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/exception \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstdint \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stdint.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/stdint.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int8_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int16_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int32_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int64_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint8_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint16_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint32_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint64_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_intptr_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_intmax_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uintmax_t.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/new \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__undef___deallocate \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/limits \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__undef_min_max \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/iterator \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__functional_base \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__debug \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/tuple \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/atomic \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/stdexcept \
+  leveldb/include/leveldb/env.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/vector \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__bit_reference \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/climits \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/limits.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/limits.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/limits.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/limits.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_limits.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/syslimits.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__split_buffer \
+  leveldb/include/leveldb/export.h leveldb/include/leveldb/status.h \
+  leveldb/include/leveldb/slice.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/assert.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/wait.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_pid_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_id_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/signal.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/appleapiopts.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/signal.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/signal.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_mcontext.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_mcontext.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/mach/i386/_structs.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ucontext.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_sigset_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_uid_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/resource.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timeval.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/endian.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/endian.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_endian.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/libkern/_OSByteOrder.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/alloca.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/types.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_dev_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_mode_t.h \
+  leveldb/db/dbformat.h leveldb/include/leveldb/comparator.h \
+  leveldb/include/leveldb/db.h leveldb/include/leveldb/iterator.h \
+  leveldb/include/leveldb/options.h \
+  leveldb/include/leveldb/filter_policy.h \
+  leveldb/include/leveldb/table_builder.h leveldb/util/coding.h \
+  leveldb/port/port.h leveldb/port/port_stdcxx.h \
+  crc32c/include/crc32c/crc32c.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cassert \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/condition_variable \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__mutex_base \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/chrono \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/ctime \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/ratio \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/system_error \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cerrno \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/errno.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/errno.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread/pthread_impl.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread/sched.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_t.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread/qos.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/qos.h \
+  /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_mach_port_t.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/mutex \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/functional \
+  leveldb/port/thread_annotations.h leveldb/util/logging.h \
+  leveldb/db/filename.h leveldb/db/log_reader.h leveldb/db/log_format.h \
+  leveldb/db/version_edit.h \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/set \
+  /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__tree \
+  leveldb/db/write_batch_internal.h \
+  leveldb/include/leveldb/write_batch.h leveldb/include/leveldb/table.h
 
 leveldb/include/leveldb/dumpfile.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/string:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/string:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++config.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__config:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/iosfwd:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stringfwd.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/memoryfwd.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/char_traits.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_algobase.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_symbol_aliasing.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/functexcept.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_posix_availability.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/exception_defines.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/cpp_type_traits.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/type_traits.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_types.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/numeric_traits.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/Availability.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_pair.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/AvailabilityInternal.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/move.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_null.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/concept_check.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_size_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/type_traits:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_mbstate_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_iterator_base_types.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_iterator_base_funcs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_rune_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/debug/assertions.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_wchar_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_iterator.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stdarg.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/ptr_traits.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/debug/debug.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_va_list.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/predefined_ops.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/stdio.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/postypes.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_off_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cwchar:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ssize_t.h:
 
-/usr/share/mingw-w64/include/wchar.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/time.h:
 
-/usr/share/mingw-w64/include/crtdefs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_clock_t.h:
 
-/usr/share/mingw-w64/include/_mingw.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_time_t.h:
 
-/usr/share/mingw-w64/include/_mingw_mac.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timespec.h:
 
-/usr/share/mingw-w64/include/_mingw_secapi.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_wctype.h:
 
-/usr/share/mingw-w64/include/vadefs.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_wint_t.h:
 
-/usr/share/mingw-w64/include/sdks/_mingw_directx.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_wctype_t.h:
 
-/usr/share/mingw-w64/include/sdks/_mingw_ddk.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/ctype.h:
 
-/usr/share/mingw-w64/include/_mingw_print_push.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/runetype.h:
 
-/usr/share/mingw-w64/include/_mingw_off_t.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstring:
 
-/usr/share/mingw-w64/include/_mingw_stat64.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/string.h:
 
-/usr/x86_64-w64-mingw32/include/swprintf.inl:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/strings.h:
 
-/usr/share/mingw-w64/include/sec_api/wchar_s.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstdio:
 
-/usr/share/mingw-w64/include/_mingw_print_pop.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cwchar:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstdint:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cwctype:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stdint.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cctype:
 
-/usr/share/mingw-w64/include/stdint.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/wctype.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stddef.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_wctrans_t.h:
 
-/usr/share/mingw-w64/include/stddef.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/algorithm:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/allocator.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/initializer_list:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstddef:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/new_allocator.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stddef.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/new:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/__stddef_max_align_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/exception:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/type_traits:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/exception.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/utility:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/exception_ptr.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__tuple:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/cxxabi_init_exception.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/memory:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/typeinfo:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/typeinfo:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/hash_bytes.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/exception:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/nested_exception.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cstdint:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/localefwd.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/stdint.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/stdint.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/clocale:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int8_t.h:
 
-/usr/share/mingw-w64/include/locale.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int16_t.h:
 
-/usr/share/mingw-w64/include/stdio.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int32_t.h:
 
-/usr/share/mingw-w64/include/sec_api/stdio_s.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_int64_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/iosfwd:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint8_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cctype:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint16_t.h:
 
-/usr/share/mingw-w64/include/ctype.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint32_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/ostream_insert.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uint64_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/cxxabi_forced.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_intptr_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_function.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_uintptr_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/backward/binders.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_intmax_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/range_access.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/_types/_uintmax_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/initializer_list:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/new:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/basic_string.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__undef___deallocate:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/atomicity.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/limits:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/gthr.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__undef_min_max:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/iterator:
 
-/usr/share/mingw-w64/include/pthread.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__functional_base:
 
-/usr/share/mingw-w64/include/errno.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__debug:
 
-/usr/share/mingw-w64/include/sys/types.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/tuple:
 
-/usr/share/mingw-w64/include/process.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/atomic:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/limits.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include-fixed/syslimits.h:
-
-/usr/share/mingw-w64/include/limits.h:
-
-/usr/share/mingw-w64/include/signal.h:
-
-/usr/share/mingw-w64/include/pthread_signal.h:
-
-/usr/share/mingw-w64/include/sys/timeb.h:
-
-/usr/share/mingw-w64/include/sec_api/sys/timeb_s.h:
-
-/usr/share/mingw-w64/include/pthread_compat.h:
-
-/usr/share/mingw-w64/include/pthread_unistd.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/alloc_traits.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/alloc_traits.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/string_conversions.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstdlib:
-
-/usr/share/mingw-w64/include/stdlib.h:
-
-/usr/share/mingw-w64/include/sec_api/stdlib_s.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/stdlib.h:
-
-/usr/share/mingw-w64/include/malloc.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/std_abs.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstdio:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cerrno:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/functional_hash.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/basic_string.tcc:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/stdexcept:
 
 leveldb/include/leveldb/env.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/stdarg.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/vector:
 
-/usr/share/mingw-w64/include/stdarg.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__bit_reference:
 
-/usr/share/mingw-w64/include/_mingw_stdarg.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/climits:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/vector:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../lib/clang/3.7.1/include/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_construct.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_uninitialized.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_vector.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_bvector.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_limits.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/vector.tcc:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/syslimits.h:
+
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__split_buffer:
 
 leveldb/include/leveldb/export.h:
 
 leveldb/include/leveldb/status.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/algorithm:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/utility:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_relops.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_algo.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/algorithmfwd.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_heap.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_tempbuf.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/uniform_int_dist.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/limits:
-
 leveldb/include/leveldb/slice.h:
 
-/usr/share/mingw-w64/include/assert.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/assert.h:
 
-/usr/share/mingw-w64/include/string.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/stdlib.h:
 
-/usr/share/mingw-w64/include/sec_api/string_s.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/wait.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_pid_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_id_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/signal.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/appleapiopts.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/signal.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/signal.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/_mcontext.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/_mcontext.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/mach/i386/_structs.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_sigaltstack.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_ucontext.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_sigset_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_uid_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/resource.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_timeval.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/endian.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/endian.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_endian.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/libkern/_OSByteOrder.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/libkern/i386/_OSByteOrder.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/alloca.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/machine/types.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/i386/types.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_dev_t.h:
+
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_mode_t.h:
 
 leveldb/db/dbformat.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstddef:
 
 leveldb/include/leveldb/comparator.h:
 
@@ -443,65 +428,65 @@ leveldb/include/leveldb/table_builder.h:
 
 leveldb/util/coding.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cstring:
-
 leveldb/port/port.h:
 
 leveldb/port/port_stdcxx.h:
 
 crc32c/include/crc32c/crc32c.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/cassert:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cassert:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/condition_variable:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/condition_variable:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/chrono:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__mutex_base:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ratio:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/chrono:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ctime:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/ctime:
 
-/usr/share/mingw-w64/include/time.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/ratio:
 
-/usr/share/mingw-w64/include/_timeval.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/system_error:
 
-/usr/share/mingw-w64/include/pthread_time.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/cerrno:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/parse_numbers.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/errno.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/std_mutex.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/errno.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/system_error:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread/pthread_impl.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/stdexcept:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread/sched.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/concurrence.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_cond_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/unique_ptr.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/tuple:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_key_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/array:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/uses_allocator.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/invoke.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_once_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/shared_ptr.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/shared_ptr_base.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/allocated_ptr.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_pthread/_pthread_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/refwrap.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/pthread/qos.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/ext/aligned_buffer.h:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/qos.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/mutex:
+/opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk/usr/include/sys/_types/_mach_port_t.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/std_function.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/mutex:
+
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/functional:
 
 leveldb/port/thread_annotations.h:
 
@@ -515,13 +500,9 @@ leveldb/db/log_format.h:
 
 leveldb/db/version_edit.h:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/set:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/set:
 
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_tree.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_set.h:
-
-/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/include/c++/bits/stl_multiset.h:
+/opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/../include/c++/v1/__tree:
 
 leveldb/db/write_batch_internal.h:
 
