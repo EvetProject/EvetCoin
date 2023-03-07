@@ -277,7 +277,7 @@ public:
 /** Used to marshal pointers into hashes for db storage. */
 
 // New serialization introduced on PIVX
-static const int DBI_SER_VERSION_NO_MS = 1004000;   // removes nMoneySupply
+static const int DBI_SER_VERSION_NO_MS = 1000000;   // removes nMoneySupply
 
 class CDiskBlockIndex : public CBlockIndex
 {

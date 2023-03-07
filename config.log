@@ -1192,7 +1192,7 @@ configure:23328: checking for library containing clock_gettime
 configure:23359: /opt/Projects/Evet/depends/x86_64-apple-darwin14/native/bin/clang++ -target x86_64-apple-darwin14 -mmacosx-version-min=10.10 --sysroot /opt/Projects/Evet/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -o conftest -pipe -O2  -I/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../include/  -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX -DOBJC_OLD_DISPATCH_PROTOTYPES=0 -L/opt/Projects/Evet/depends/x86_64-apple-darwin14/share/../lib  -Wl,-headerpad_max_install_names conftest.cpp  >&5
 Undefined symbols for architecture x86_64:
   "_clock_gettime", referenced from:
-      _main in conftest-d0aaf4.o
+      _main in conftest-0f5f87.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:23359: $? = 1
@@ -6249,7 +6249,6 @@ config.status:1589: creating share/qt/Info.plist
 config.status:1589: creating test/config.ini
 config.status:1589: creating contrib/devtools/split-debug.sh
 config.status:1589: creating src/config/pivx-config.h
-config.status:1770: src/config/pivx-config.h is unchanged
 config.status:1849: executing depfiles commands
 config.status:1849: executing libtool commands
 configure:36392: === configuring in src/univalue (/opt/Projects/Evet/src/univalue)
