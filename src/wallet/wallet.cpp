@@ -43,7 +43,7 @@ const char * DEFAULT_WALLET_DAT = "wallet.dat";
  * so it's still 10 times lower comparing to bitcoin.
  * Override with -mintxfee
  */
-CFeeRate CWallet::minTxFee = CFeeRate(100000000);
+CFeeRate CWallet::minTxFee = CFeeRate(10000);
 
 /**
  * minimum accpeted value for stake split threshold
